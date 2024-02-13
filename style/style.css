@@ -28,8 +28,8 @@
   	display: flex;
     align-items: center;
     text-align: center;
-    width: 100%;
-	padding-left: 33%;
+    width: 44%;
+	margin: auto;
 }
 
 .navbar a {
@@ -209,7 +209,6 @@ a:active {
 	color: blueviolet;
 }
 
-
 .text2 {
 	padding-left: 33%;
     padding-top: 5px;
@@ -260,9 +259,8 @@ a:active {
 	object-fit: cover;
 	overflow: hidden;
 }
-
-.img0 .img:hover{
-	opacity: .9;
+.img0 img:hover{
+	opacity: .8;
 }
 
 .eventi{
@@ -344,9 +342,8 @@ a:active {
 	color: blueviolet;
 	font-size: 13px;
 	padding-top: 50px;
-	padding-bottom: 100px;
+	padding-bottom: 150px;
 	margin: 0px;
-	line-height: 16px;
 }
 .sudi a{
 	color: blueviolet;
@@ -361,7 +358,8 @@ a:active {
 .sudinoi {
 	width: 50%;
 	color: blueviolet;
-	font-size: 12px;
+	font-size: 13px;
+	line-height: 18px;
 }
 
 .spiegone {
@@ -406,6 +404,7 @@ a:active {
 	padding: 50px 80px;
 	width: 40%;
 	line-height: 10px;
+	font-size: 16px;
 }
 
 .img2 {
@@ -415,7 +414,7 @@ a:active {
 .img2 img{
 	padding-left: 100px;
 	max-width: 400px;
-	margin-top: -100px;
+	margin-top: -80px;
 }
 
 .row:after {
@@ -429,20 +428,41 @@ a:active {
 	background-color: blueviolet;
 	border: none;
 	color: white;
-	padding: 15px 20px;
+	padding: 20px 20px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 13px; 
+	font-size: 15px; 
+	cursor: pointer;
 }
 
 .buttonform:hover {
 	opacity: .9;
 }
 
+/* mappa */
+#map {
+    height: 200px;
+    width: 450px;
+	padding-left: 15px;
+}
+
 
 /*archivio search*/ 
 
-
+.vistacatalogo {
+	margin-right: 150px;
+}
+.vistacatalogo i{
+	font-size: 24px;
+	color:#ffcc7a;
+	float: right;
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+}
+.vistacatalogo i:hover{
+	color:white; 
+}
 .search {
 	border-radius: 5px;
 	margin: 20px;
@@ -452,19 +472,19 @@ a:active {
 	background-color: whitesmoke;
 }
 
-.search .text{
+.search .texto{
 	color: black;
 	margin-left: 100px;
 	margin-top: 100px; 
 	text-align: left;
 }
-.search .text p{
+.search .texto p{
 	font-size: 16px;
 	color: black;
 	margin-left: 0px;
 	text-align: text;
 }
-.search .text h2{
+.search .texto h2{
 	font-size: 30px;
 }
 
@@ -533,8 +553,11 @@ input[type=button] {
 	text-align: center;
 	text-decoration: none;
 	font-size: 13px; 
+	cursor: pointer;
 }
-
+.buttonsearch:hover {
+	opacity: .8;
+}
 .dropdownsearch {
 	position: relative;
  	display: inline-block;
@@ -589,8 +612,66 @@ input[type=button] {
 #myInput:focus {outline: 3px solid #ddd;}
 
 .show {display: block;}
-	  
+	
 
+/*tabella*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border:none;
+	border-radius: 5px;
+	background: #eae9fc;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 70px;
+	width: 800px;
+}
+
+td {
+	text-align: left;
+	padding: 11px;
+	padding-left: 20px;
+	font-size: 11px;
+}
+
+td b{
+	font-size: 13px;
+}
+td a{
+	color: blueviolet;
+}
+td a:visited{
+	color: blueviolet;
+}
+td a:hover {
+	color:#ffcc7a;
+}
+
+.centrato {
+	margin: auto;
+	width: 53%;
+	color: white;
+}
+.centrato h2{
+	font-size: 22px;
+	padding-top: 30px;
+}
+.trama {
+	color: white;
+	background-color: blueviolet;
+	text-align: left;
+	padding: 20px;
+	font-size: 13px;
+	line-height: 18px;
+	border-radius: 3px;
+}
+.trama a{
+	color: black;
+}
+.trama a:hover {
+	color:#ffcc7a;
+}
 
 
 *{
@@ -605,7 +686,7 @@ input[type=button] {
 	margin-left: 150px;
 	margin-right: 150px;
 	padding: 10px;
-	margin-bottom: 150px;
+	margin-bottom: 10px;
 }
 
 .card {
@@ -627,7 +708,6 @@ input[type=button] {
 	opacity: .7;
 } 
 
-
 .card-content h4{
 	font-size: 16px;
 	line-height: 1,5px;
@@ -643,6 +723,7 @@ input[type=button] {
 }
 .card-content a{
 	color: black;
+	margin: none;
 }
 .card-content a:hover{
 	color:#ffcc7a;
@@ -653,14 +734,13 @@ input[type=button] {
 	color: blueviolet;
 }
 
-
-
 .card-content .btn{
 	display: inline-block;
 	padding: 8px 16px;
 	text-decoration: none;
 	background-color: rgb(13, 2, 29);
-	margin: 20px 15px;
+	margin: 20px 18px;
+	margin-top: 5px;
 	border-radius: 4px;
 	color: gray;
 	font-size: 12px;
@@ -670,11 +750,44 @@ input[type=button] {
 }
 
 
-/*main zine*/
+/*pagination*/
+
+.center {
+	text-align: center;
+}
+.pagination {
+	display: inline-block;
+	font-size: 10px;
+	margin-bottom: 50px;
+}
+  
+.pagination a {
+	color:#ffcc7a;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+  
+.pagination a.active {
+	background-color: blueviolet;
+	color: white;
+}
+.pagination a:hover:not(.active) {background-color: dimgray;}
+
+
+
+/*zine*/
 
 .mainzine {
 	background-color: white;
 	background-image: linear-gradient(rgba(106, 90, 205, 0.3), rgba(106, 90, 205, 0.3)), url("./../img/archivio/sfondi/antonia.jpg");
+	background-size: cover;
+	height: 800px;
+}
+
+.zine2 {
+	background-color: white;
+	background-image: linear-gradient(rgba(106, 90, 205, 0.3), rgba(106, 90, 205, 0.3)), url("./../img/archivio/sfondi/178917-dark-color-old-paper-background-template.jpg");
 	background-size: cover;
 	height: 800px;
 }
@@ -791,6 +904,54 @@ ul.breadcrumb li a:hover {
 }
 
 
+/* WEB PLAN */
+
+.relazione {
+	background-color: #2a0e43;
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+.webplan-container {
+	width: 900px;
+	height: 500px;
+	position: relative;
+	margin: auto;
+	border-radius: 5px;
+}
+
+.ppt {
+	display: none;
+	align-items: center;
+}
+.ppt img{
+	max-height: auto;
+	max-width: 900px;
+}
+
+.bibliography{
+	background-color: whitesmoke;
+	height: auto;
+	margin-left: 260px;
+	margin-right: 260px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	padding-left: 50px;
+	padding-bottom: 50px;
+}
+.bibliography h2{
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+.bibliography p{
+	padding-left: 10px;
+}
+.bibliography a{
+	color: blueviolet;
+}
+.bibliography a:hover {
+	color:#ffcc7a;
+}
 
 
 /* FOOTER */ 

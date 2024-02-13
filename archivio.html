@@ -5,6 +5,7 @@
 		<title>Zine Teca</title>
 		<link rel="icon" type="image/x-icon" href="./img/favicon/cloudd.ico">
 		<link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/387d5faaf8.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
@@ -21,26 +22,29 @@
     <div class="navbar font_poppins" class="hover">
 			<a title="home" href="index.html">home</a>
 				<div class="dropdown">
-					<button class="dropbtn active">about us</button>
+					<button title="about us" class="dropbtn active">about us</button>
 					<div class="dropdown-content">
 						<a href="progetto.html">il progetto</a>
 						<a href="progetto.html #mandaci">call to action</a>
 					</div>
 				</div>
 			<a title="archivio" class="active" href="archivio.html">archivio</a>
-			<a title="what's new" href="altro">eventi e news</a>
+			<a title="what's new" href="index.html">eventi e news</a>
+      <a title="web plan" href="web_plan.html">web plan</a>
 		</div>
 
     <div class="search font_poppins">
-      <div class="text">
-        <h2>Search Zines</h2>
+      <div class="texto">
+        <h2 class="font_marker">Search Zines</h2><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
         <p>Esplora il Catalogo</p>
       </div>
       <form class="search" action="/pagina???">
         <div class="row pad-lr-70">
           <div class="column sinistra">
             <label for="fname">Titolo/Autore</label><br>
-            <input class="w100" type="text" id="fname" name="fname" value="..."><br>
+            <input class="w100" type="text" id="fname" name="fname" placeholder="..."><br>
           </div>
           <div class="column destra">
             <label for="lname">Anno</label><br>
@@ -52,6 +56,7 @@
                 <a href="#2023">2023</a>
                 <a href="#2022">2022</a>
                 <a href="#2021">2021</a>
+                <a href="#2021">1979</a>
               </div>
             </div>
           </div>
@@ -59,16 +64,21 @@
         <div class="row pad-lr-70">
           <div class="column sinistra">
             <label for="fname">Tags</label><br>
-            <input class="w100" type="text" id="fname" name="fname" value="..."><br>
+            <input class="w100" type="text" id="fname" name="fname" placeholder="..."><br>
           </div>
         </div>
         <div class="row pad-lr-72 pad-top-20">
-          <button class="buttonsearch">Search</button>
+          <button class="buttonsearch">Cerca</button>
         </div>
         </div>
       </form> 
     </div>
 
+        <div class="vistacatalogo">
+          <i class="fa-regular fa-clock" title="ordine cronologico"></i>
+          <i class="fa-solid fa-arrow-down-z-a" title="ordine alfabetico z/a"></i>
+          <i class="fa-solid fa-arrow-down-a-z" title="ordine alfabetico a/z"></i>
+        </div>
         <div class="card-container font_poppins">
 
             <div class="card">
@@ -78,22 +88,24 @@
                 <div class="card-content">
                   <a href="zine.html"><h4><b>Pasta e Patate</b></h4></a>
                   <a href=""><p><b>Antonia Messineo</b></p></a>
+                  <a href=""><p>2018</p></a>
                   <div class="tags">
-                    <p>Tags: <a href="">#famiglia</a><a href=""> #fotografia</a></p>
+                    <p><a href="">#famiglia</a><a href=""> #fotografia</a></p>
                   </div>
                   <a href="" class="btn">Download</a>
                 </div> 
             </div> 
             
             <div class="card">
-              <a href="">
-                <img src="./img/archivio/copertine/card_2.jpg" alt="Title" style="width:100%">
+              <a href="zinedue.html">
+                <img src="./img/home/thefearzine.jpg" alt="Title" style="width:100%">
               </a>
                 <div class="card-content">
-                  <a href=""><h4><b>Title</b></h4></a>
-                  <a href=""><p><b>Ansia Collective</b></p></a>
+                  <a href="zinedue.html"><h4><b>The Fear Zine</b></h4></a>
+                  <a href=""><p><b>Danks Javlarna</b></p></a>
+                  <a href=""><p>2023</p></a>
                   <div class="tags">
-                    <p>Tags:</p>
+                    <p><a href="">#appropriationart</a><a href=""> #fotografia</a></p>
                   </div>
                   <a href="" class="btn">Download</a>
                 </div> 
@@ -105,10 +117,11 @@
                 <img src="./img/archivio/copertine/card_3.jpg" alt="Title" style="width:100%">
               </a>
                 <div class="card-content">
-                  <a href=""><h4><b>Title</b></h4></a>
-                  <a href=""><p><b>BOLO</b></p></a>
+                  <a href=""><h4><b>Titolo</b></h4></a>
+                  <a href=""><p><b>Autore</b></p></a>
+                  <a href=""><p>Anno</p></a>
                   <div class="tags">
-                    <p>Tags:</p>
+                    <p>Tags</p>
                   </div>
                   <a href="" class="btn">Download</a> <!-- inserire link x btn!! -->
                 </div> 
@@ -119,14 +132,25 @@
                 <img src="./img/archivio/copertine/card_1.jpg" alt="Title" style="width:100%">
               </a>
                 <div class="card-content">
-                  <a href=""><h4><b>cosa</b></h4></a>
-                  <a href=""><p><b>BOLO</b></p></a>
+                  <a href=""><h4><b>Titolo</b></h4></a>
+                  <a href=""><p><b>Autore</b></p></a>
+                  <a href=""><p>Anno</p></a>
                   <div class="tags">
-                    <p>Tags:</p>
+                    <p>Tags</p>
                   </div>
                   <a href="" class="btn">Download</a>
                 </div> 
             </div> 
+        </div>
+
+        <div class="center">
+          <div class="pagination font_poppins">
+            <a href="#">&laquo;</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">&raquo;</a>
+          </div>
         </div>
         	
     <footer id="footer">
@@ -144,6 +168,7 @@
         <h3><a title="il progetto" href="progetto.html">about us</a></h3>
         <h3><a title="archivio" href="archivio.html">archivio</a></h3>
         <h3><a title="what's new" href="altro.html">eventi e news</a></h3>
+        <h3><a title="web plan" href="web_plan.html">web plan</a></h3>
       </div>
 
       <div class="rightfoot font_poppins">
